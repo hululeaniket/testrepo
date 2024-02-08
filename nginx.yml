@@ -1,0 +1,24 @@
+---
+- name: Install Nginx
+  hosts: all  # Replace with your server's hostname or group name
+  become: true  # Run tasks with sudo/root privileges
+
+  tasks:
+
+    - name: install leatest version of nginx
+      yum:
+        name: nginx
+        state: present
+
+    - name: start ngnix servic
+      service:
+        name: nginx
+        state: started
+
+    - name: enable nginx service
+      service:
+        name: nginx
+        enabled: yes
+
+    - name: get nginx installed version
+      command: nginx -v
