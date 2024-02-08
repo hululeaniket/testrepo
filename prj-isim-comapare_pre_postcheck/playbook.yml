@@ -1,7 +1,7 @@
 ---
 - name: Running the master playbook for comparision task.
-  hosts: localhost
-  gather_facts: false
+  hosts: all
+  gather_facts: true
   roles:
     - rol-capg-prepostchecks
 
