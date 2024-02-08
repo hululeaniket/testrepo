@@ -1,0 +1,4 @@
+---
+# tasks file for rol-capg-compareprepost
+- name: Comparing Pre-Checks and Post-Checks Files
+  ansible.builtin.script: "{{ script_path }} {{ pre_checks_path }} {{ post_checks_path }} {{ output_path }}"

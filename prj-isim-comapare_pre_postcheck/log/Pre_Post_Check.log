@@ -1,0 +1,9 @@
+2024-01-31 14:51:03,551 p=12921 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-01-31 14:51:03,576 p=12921 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-01-31 14:51:04,198 p=12921 u=root n=ansible | PLAY [Running the master playbook for comparision task.] *******************************************************************************************************************
+2024-01-31 14:51:04,247 p=12921 u=root n=ansible | TASK [rol-capg-prepostchecks : Comparing Pre-Checks and Post-Checks Files] *************************************************************************************************
+2024-01-31 14:51:04,567 p=12921 u=root n=ansible | changed: [localhost]
+2024-01-31 14:51:04,592 p=12921 u=root n=ansible | PLAY RECAP *****************************************************************************************************************************************************************
+2024-01-31 14:51:04,593 p=12921 u=root n=ansible | localhost                  : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
